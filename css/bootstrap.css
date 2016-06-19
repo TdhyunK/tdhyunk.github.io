@@ -1240,8 +1240,8 @@ h2,
 .h2,
 h3,
 .h3 {
-  margin-top: 20px;
-  margin-bottom: 10px;
+  margin-top: 10vh;
+  margin-bottom: 5vh;
 }
 h1 small,
 .h1 small,
@@ -1608,7 +1608,13 @@ pre code {
 
 .container-box{
   height:20vh;
+}
+.container-space{
+  height: 5vh;
+}
 
+.container-smaller-space{
+  height:2vh;
 }
 @media (min-width: 768px) {
   .container {
