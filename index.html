@@ -193,7 +193,7 @@
     $(document).ready(function(){
       $("#AboutMeIcon").click(function(){
         $("#moreInfo").hide();
-        $("#personalInfo").fadeIn(2000);
+        $("#personalInfo").show();
         $("#AboutMePage").fadeIn(2000);
       });
     });
@@ -201,7 +201,7 @@
     $(document).ready(function(){
       $("#ContactIcon").click(function(){
         $("#moreInfo").hide();
-        $("#personalInfo").fadeIn(2000);
+        $("#personalInfo").show();
         $("#ContactMe").fadeIn(2000);
       });
 
@@ -210,7 +210,7 @@
     $(document).ready(function(){
       $("#MyWorkIcon").click(function(){
         $("#moreInfo").hide();
-        $("#personalInfo").fadeIn(2000);
+        $("#personalInfo").show();
         $("#MyWork").fadeIn(2000);
       });
     });
@@ -218,7 +218,7 @@
     $(document).ready(function(){
       $("#ResumeIcon").click(function(){
         $("#moreInfo").hide();
-        $("#personalInfo").fadeIn(2000);
+        $("#personalInfo").show();
         $("#MyResume").fadeIn(2000);
       });
     });
@@ -229,7 +229,7 @@
         $("#ContactMe").hide();
         $("#MyWork").hide();
         $("#MyResume").hide();        
-        $("#personalInfo").fadeIn(2000);
+        $("#personalInfo").show();
         $("#AboutMePage").fadeIn(2000);
       });
     });    
@@ -239,7 +239,7 @@
         $("#ContactMe").hide();
         $("#AboutMePage").hide();
         $("#MyResume").hide();        
-        $("#personalInfo").fadeIn(2000);
+        $("#personalInfo").show();
         $("#MyWork").fadeIn(2000);
       });
     });
@@ -249,7 +249,7 @@
         $("#AboutMePage").hide();
         $("#MyWork").hide();
         $("#MyResume").hide();
-        $("#personalInfo").fadeIn(2000);
+        $("#personalInfo").show();
         $("#ContactMe").fadeIn(2000);
       });
     });   
@@ -260,7 +260,7 @@
         $("#AboutMePage").hide();
         $("#MyWork").hide();
         $("#ContactMe").hide();
-        $("#personalInfo").fadeIn(2000);
+        $("#personalInfo").show();
         $("#MyResume").fadeIn(2000);
       });
     });   
@@ -335,7 +335,7 @@
 
           <div class="col-sm-3">
             <h2 align="center"> About Me </h2>
-            <div class="container-space"> </div>
+            <div class="container-smaller-space"> </div>
             <div id="AboutMeIcon" class="glyphicon glyphicon-user" style="cursor:pointer"></div>
 
 
@@ -343,19 +343,19 @@
 
           <div class="col-sm-3">
             <h2 align="center"> My Work </h2>
-            <div class="container-space"> </div>
+            <div class="container-smaller-space"> </div>
             <div id="MyWorkIcon" class="glyphicon glyphicon-briefcase"  style="cursor:pointer"></div>
           </div>
 
           <div class="col-sm-3">
             <h2 align="center"> My Resume </h2>
-            <div class="container-space"> </div>
+            <div class="container-smaller-space"> </div>
             <div id="ResumeIcon" class="glyphicon glyphicon-list-alt" style="cursor:pointer"></div>
           </div>
 
           <div class="col-sm-3">
             <h2 align="center"> Contact Me </h2>
-            <div class="container-space"> </div>
+            <div class="container-smaller-space"> </div>
             <div id="ContactIcon" class="glyphicon glyphicon-envelope" style="cursor:pointer"></div>
           </div>
         </div>
@@ -379,32 +379,26 @@
         <div class="row">
         <h2 id="home"> Home </h2>
         <p id="ylhstext"> <img src="ylhs.jpg" id="ylhs" align="left" alt="ylhs" width="450" height="300">
-        I was born and raised in Southern California (Yorba Linda, California, to be exact), home to year round sunshine, amazing food, and terrible traffic. I attended Yorba Linda High School where I was involved with the men's tennis program all four years, mathletics (yes, it's a real thing), and other clubs here and there. Whenever I think back to high school, a rush of nostalgia hits me and a smile slowly emerges on my face. These were the good times before I knew they were the good times.
+        I was born and raised in Southern California (Yorba Linda, California, to be exact), home to year round sunshine, amazing food, and terrible traffic. I attended Yorba Linda High School where I was involved with the men's tennis program all four years, mathletics (yes, it's a real thing), and other clubs here and there. Whenever I think back to high school, a rush of nostalgia hits me and a smile slowly emerges on my face. This was the good times before I knew they were the good times.
         </p>
         </div>
-        <!-- <div class="container-space"> </div> -->
 
+ 
         <div class="row">
-
         <h2 id="college"> College </h2>
         <p id="collegetext"> <img src="dartmouthcollege.jpg" id="dartmouth" align="right" alt="dartmouth" width="450" height="300">
-        I have since transitioned from sunny Southern California to snowy New Hampshire for college, and although it has been quite a transition, I have
-        loved every minute of it. I am lucky enough to be able to attend Dartmouth College as a member of the class of 2019 and it has been a place where I have grown and learned so much at my time here, and I know that I will grow and learn even more in my coming years here.
+        I have since transitioned from sunny Southern California to snowy New Hampshire for college, and although it has been quite a transition, I
+        love every minute of it. I am lucky enough to be able to attend Dartmouth College as a member of the class of 2019 and it has been a place where I have grown and learned so much at my time here, and I know that I will grow and learn even more in my coming years here.
         </p>
-        
-        </div> 
-
-       <!--  <div class="container-space"> </div>
-        <div class="container-space"> </div> -->
+        </div>
 
         <div class="row">
-
         <h2 id="work"> Work Experience </h2>
         <p id="worktext"> <img src="BancOfCal.jpg" id="boc" align="left" alt="BancOfCal" width="405" height="232"> 
         For the summer of 2016, I will be working as a Corporate Strategy Intern at the Banc of California located in Irvine, California. I will be working with the strategies department with financial analysts to assist in financial modelling.
         </p>
         </div>
-        <!-- <div class="container-space"> </div> -->
+
 
 
   <!--       <h2 id="nextsteps"> Next Steps </h2>
@@ -420,16 +414,15 @@
 
               <div class="col-sm-4">
                 <h3> K-Means Image Processing </h3>
-                <p> <img src="beach251.jpg" alt="beach251" width="250" height="200"> <div class="container-smaller-space"> </div>
-                This application takes an image and compresses it by grouping pixels together and using k-means to find an accurate color to represent the group of pixels.</p>
+                <p> <img src="beach251.jpg" alt="beach251" width="250" height="200"> <div class="container-smaller-space"> </div> This application takes an image and compresses it by grouping pixels together and using k-means to find an accurate color to represent the group of pixels.</p>
               </div>
               <div class="col-sm-4">
                 <h3> Graphical Editor </h3>
-                <p> <img src="graphicaleditor.png" alt="graphicaleditor" width="250" height="200"> <div class="container-smaller-space">This simple program creates a graphical editor that allows users to create different shapes with different colors. </p>
+                <p> <img src="graphicaleditor.png" alt="graphicaleditor" width="250" height="200"> <div class="container-smaller-space"> </div> This simple program creates a graphical editor that allows users to create different shapes with different colors. </p>
               </div>
               <div class="col-sm-4">
                 <h3> Huffman Encoding </h3>
-                <p> <img src="Huff-movie.png" alt="Huff-Movie" width="250" height="200"> <div class="container-smaller-space"> This program compresses the contents of a file through the use of Huffman Encoding. This file compression is accomplished by replacing frequently occuring characters with shorter codes. The characters were encoded with variable-lengths. </p>
+                <p> <img src="Huff-movie.png" alt="Huff-Movie" width="250" height="200"> <div class="container-smaller-space"> </div> This program compresses the contents of a file through the use of Huffman Encoding. This file compression is accomplished by replacing frequently occuring characters with shorter codes. The characters were encoded with variable-lengths. </p>
 
               </div>
             </div>
@@ -437,15 +430,15 @@
             <div class="row">
               <div class="col-sm-4">
                 <h3> Kevin Bacon Game </h3>
-                <p> <img src="KevinBacon.jpg" alt="KevinBacon" width="250" height="200"> <div class="container-smaller-space"> Using data from a given file containing actors, movies, and actor-to-movie relationships, this program calculates how many degrees a given actor is separated from Kevin Bacon. The degree of separation is the actor's Kevin Bacon number. Breadth-first-search was used to find an actor's Kevin Bacon number.
+                <p> <img src="KevinBacon.jpg" alt="KevinBacon" width="250" height="200"> <div class="container-smaller-space"> </div> Using data from a given file containing actors, movies, and actor-to-movie relationships, this program calculates how many degrees a given actor is separated from Kevin Bacon. The degree of separation is the actor's Kevin Bacon number. Breadth-first-search was used to find an actor's Kevin Bacon number.
               </div>
               <div class="col-sm-4">
                 <h3> Artificial Intelligence Connect 4 </h3>
-                <p> <img src="Connect4.jpg" alt="Connect4" width="250" height="200"> <div class="container-smaller-space"> For this project, I created a game of connect 4 with an artificial-intelligence computer player with varying levels of difficulty. The computer player chooses its move based off of the results of alpha-beta pruning. </p>
+                <p> <img src="Connect4.jpg" alt="Connect4" width="250" height="200"> <div class="container-smaller-space"> </div> For this project, I created a game of connect 4 with an artificial-intelligence computer player with varying levels of difficulty. The computer player chooses its move based off of the results of alpha-beta pruning. </p>
               </div>
               <div class="col-sm-4">
                 <h3> Tiny Search Engine </h3> 
-                <p> <img src="tse.png" alt="tse" width="250" height="200"> <div class="container-smaller-space"> The tiny search engine is a search engine written in C. The tiny search engine has three components: the crawler, indexer, and querier. <a href="javascript:;" id="tsereadmore"> Show More. </a> 
+                <p> <img src="tse.png" alt="tse" width="250" height="200"> <div class="container-smaller-space"> </div> The tiny search engine is a search engine written in C. The tiny search engine has three components: the crawler, indexer, and querier. <a href="javascript:;" id="tsereadmore"> Show More. </a> 
                 </p>
                 <p id="tsemore"> The crawler is provided a seed URL and "crawls" through the seed URL to find any other web pages that are linked to it. The indexer uses the results of the crawler to generate an inverted index file that contains every word that was found in the web pages and the frequency of each word. Lastly, the querier handles search queries from the command line. Words that are searched together are handled with either a space or "AND" between the words, whereas words that must be searched separately are seprated with "OR" in between the words. <a href="javascript:;" id="tsereadless"> Show less. </a></p>
               </div>              
@@ -454,7 +447,7 @@
             <div class="row">
               <div class="col-sm-4">
                 <h3> Mission Incomputable </h3>
-                <p> <img src="pebble.png" alt="pebble" width="250" height="200"> <div class="container-smaller-space"> Mission Incomputable is a game that I created with the use of a Pebble smartwatch written in C. The premise of the game is that there are code drops scattered at a certain location, and agents must capture the code drops while at the same time avoiding being neutralized by an opposing team's agent. <a id="mireadmore" href="javascript:;"> Show More. </a>
+                <p> <img src="pebble.png" alt="pebble" width="250" height="200"> <div class="container-smaller-space"> </div> Mission Incomputable is a game that I created with the use of a Pebble smartwatch written in C. The premise of the game is that there are code drops scattered at a certain location, and agents must capture the code drops while at the same time avoiding being neutralized by an opposing team's agent. <a id="mireadmore" href="javascript:;"> Show More. </a>
                 </p>
                 <p id="missionincomputablemore"> There are three components to the game: a guide agent, a field agent, and a gameserver. The guide agent is the individual that walks around campus with the Pebble smartwatch and captures code and neutralizes other players. The guide agent provides the field agent with hints regarding the location of the code drops and other information. The game server holds all of the information of the game, such as the location of the code drops, location of both guide agents and field agents, and which team has captured the most code drops. <a href="javascript:;" id="mireadless"> Show less. </a> </p>
               </div>
