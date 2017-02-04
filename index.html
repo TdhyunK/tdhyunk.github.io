@@ -83,7 +83,12 @@
       });
     });
     $(document).ready(function(){
-      $(".homeBoxEven").find("*").click(function(e){
+      $(".homeBoxEven").find(".HiddenTextBody").click(function(e){
+        e.stopPropagation();
+      });
+    });
+    $(document).ready(function(){
+      $(".homeBoxOdd").find(".HiddenTextBody").click(function(e){
         e.stopPropagation();
       });
     });
@@ -97,11 +102,6 @@
           $(this).find(".OriginalText").show();
         }
         $(this).find(".HiddenTextBody").slideToggle();        
-      });
-    });
-    $(document).ready(function(){
-      $(".homeBoxOdd").find("*").click(function(e){
-        e.stopPropagation();
       });
     });
     // ************************************************//
@@ -164,18 +164,18 @@
           <div class="HiddenTextBody">
           <table>
               <tr>
-              <th> <div class="md-trigger" data-modal="tse-modal">  Tiny Search Engine </div> </th>
-              <th> <div class="md-trigger" data-modal="personal-site-modal"> Personal Website </div> </th>
+              <th class="md-trigger" data-modal="tse-modal"> Tiny Search Engine </th>
+              <th class="md-trigger" data-modal="personal-site-modal"> Personal Website </th>
               </tr>
 
               <tr>
-              <th> <div class="md-trigger" data-modal="SupremeBot-modal"> SupremeBot </div> </th>
-              <th> <div class="md-trigger" data-modal="mission-incomputable-modal"> Mission Incomputable </div> </th>
+              <th class="md-trigger" data-modal="SupremeBot-modal"> SupremeBot </th>
+              <th class="md-trigger" data-modal="mission-incomputable-modal"> Mission Incomputable </th>
               </tr>
 
               <tr>
-              <th> <div class="md-trigger" data-modal="Autocal-modal"> AutoCal </div> </th>
-              <th> <div class="md-trigger" data-modal="evasyst-modal"> Evasyst Website </div> </th>
+              <th class="md-trigger" data-modal="Autocal-modal"> AutoCal </th>
+              <th class="md-trigger" data-modal="evasyst-modal"> Evasyst Website </th>
               </tr>
               </table>
         </div>
