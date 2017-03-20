@@ -30,6 +30,15 @@
 
 
     <script>
+
+    // Window loading function
+    $(window).load(function() {
+      $(".spinner").fadeOut("slow");
+            // $(".spinner").hide();
+
+      $("#homePage").css("display", "table");
+    })
+
     $(document).ready(function(){
       // Hover Over Boxes to Change Color and Text
         $(".homeBoxOdd").hover(function(){
@@ -144,7 +153,9 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="http://code.jquery.com/color/jquery.color-2.1.2.min.js"></script>
 
-    <div id="homePage">
+    <div class="spinner"></div>
+
+    <div id="homePage" class="animate-bottom">
       <div class="middle">
         <div class="inner">
         <div class="homeBoxOdd" id="ThomasKim">
