@@ -1,196 +1,66 @@
-#homePage{
-	display: none;
-    position: absolute;
-    height: 100%;
-    width: 100%;
+html {
+  font-family: 'Roboto', sans-serif;
+  color: black;
 }
 
-.middle{
-	display: table-cell;
-    vertical-align: middle;
+body {
+  margin: 0px;
 }
 
-.inner {
-    margin-left: auto;
-    margin-right: auto; 
-    width: 80%;
-}
-.homeBoxOdd{
-	background-color: black;
-	border-style: solid;
-	text-align: center;
-    border-color: #c1c1c1;
-    margin-top: 3%;
-    margin-bottom: 0%;
-    margin-left: 20%;
-    margin-right: 20%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    overflow: hidden;
-    position: relative;
-
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #fff;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
-.homeBoxEven{
-	background-color: white;
-	border-style: solid;
-	text-align: center;
-    border-color: #c1c1c1;
-    margin-top: 3%;
-    margin-bottom: 0%;
-    margin-left: 20%;
-    margin-right: 20%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
+h1 {
+  font-size: 6em;
+  font-weight: 100;
 }
 
-.HiddenTextBody{
-	display: none;
-	margin-top: 0px;
-	background-color: #fff;
-	margin-bottom: 0px;
-	padding: 0px;
+h2 {
+  font-size: 4em;
+  font-weight: 100;
 }
 
-.HoverText{
-	display: none;
+ul {
+  list-style-type: none;
 }
 
-.HiddenText{
-	/*display: none;*/
-	padding: 5%;
-	margin-top: 5%;
-	margin-bottom: 0%;
-	margin-left: 10%;
-	margin-right: 10%;
+.navbar li {
+  display: inline;
+  float: right;
+  padding: 2%;
 }
 
-#MyWork{
-	display: none;
-	border: 0px;
+.google-blue {
+  color: #4285F4;
 }
 
-.WorkGrid{
-	width: 50%;
-	height: 25%;
-	border-style: solid;
-	border-color: #c1c1c1;
-
-}
-.left-half{
-    width:50%;
-    height: 100%;
-    float:left;
-    margin: 0px;
-    padding: 0px;
-    border-style: solid;
-    border-color: #000;
-    border-width: thin;
-    font-size: 2em;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
-}
-.right-half{
-	width: 50%;
-	height: 100%;
-    overflow-x:hidden;
-    margin: 0px;
-    padding: 0px;
-    border-style: solid;
-    border-color: #000;
-    border-width: thin;
-	font-size: 2em;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
-
-}
-.OriginalText{
-	color: #fff;
-	padding: 0px;
+.google-red {
+  color: #DB4437;
 }
 
-#WorkHolder{
-	width: 100%;
-	height: 100%;
-	table-layout: fixed;
+.google-yellow {
+  color: #F4B400;
 }
 
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-    width: 100%;
-    border: 1px solid #ddd;
+.google-green {
+  color: #0F9D58;
 }
 
-th, td {
-    border: solid;
-    text-align: center;
-    padding: 8px;
-    font-size: 1.2em;
-    border-color: #ddd;
+.dartmouth-green {
+  color: #498829;
 }
 
-tr:nth-child(even){background-color: #f2f2f2}
-
-.paragraphLink{
-	color: #c0392b;
+.bold {
+  font-weight: 300;
 }
 
-.homeBoxHeader{
-	height: 100%;
-	width: auto;
-	margin: 0px;
-	
-}
-
-*{
-	font-family: 'Quicksand', sans-serif;
-	font-weight: light !important;
-}
-
-.spinner {
-  width: 40px;
-  height: 40px;
-  background-color: #000;
-
-  margin: 25% 50%;
-  -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
-  animation: sk-rotateplane 1.2s infinite ease-in-out;
-}
-
-@-webkit-keyframes sk-rotateplane {
-  0% { -webkit-transform: perspective(120px) }
-  50% { -webkit-transform: perspective(120px) rotateY(180deg) }
-  100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
-}
-
-@keyframes sk-rotateplane {
-  0% { 
-    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
-    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg) 
-  } 50% { 
-    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
-    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg) 
-  } 100% { 
-    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
-    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
-  }
-}
-
-/* Add animation to "page content" */
-.animate-bottom {
-  position: relative;
-  -webkit-animation-name: animatebottom;
-  -webkit-animation-duration: 1s;
-  animation-name: animatebottom;
-  animation-duration: 1s
-}
-
-@-webkit-keyframes animatebottom {
-  from { bottom:-100px; opacity:0 } 
-  to { bottom:0px; opacity:1 }
-}
-
-@keyframes animatebottom { 
-  from{ bottom:-100px; opacity:0 } 
-  to{ bottom:0; opacity:1 }
+a:-webkit-any-link {
+  color: black;
 }

@@ -4,296 +4,56 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Roboto Font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="purejs-onepage-scroll/onepage-scroll.css" rel="stylesheet">
+    <script src="purejs-onepage-scroll/onepagescroll.min.js"></script>
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Thomas Kim</title>
-
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
-    <!-- Import css stylesheet -->
-    <link type="text/css" rel="stylesheet" href="css/styles.css">
-    <!--Import Quicksand font-->
-    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-    <!-- Import Modal Window effects  -->
-    <link rel="stylesheet" type="text/css" href="ModalWindowEffects/css/default.css">
-    <link rel="stylesheet" type="text/css" href="ModalWindowEffects/css/component.css">
-    <script src="ModalWindowEffects/js/modernizr.custom.js"></script>
-
-
-
-    <script>
-
-    // Window loading function
-    $(window).load(function() {
-      $(".spinner").fadeOut("slow");
-            // $(".spinner").hide();
-
-      $("#homePage").css("display", "table");
-    })
-
-    $(document).ready(function(){
-      // Hover Over Boxes to Change Color and Text
-        $(".homeBoxOdd").hover(function(){
-          if($(this).find(".HiddenTextBody").css('display') == 'none'){
-
-            $(this).css("background-color", "#c1c1c1");
-            $(this).css("cursor", "pointer");
-            $(this).find(".HoverText").show();
-            $(this).find(".OriginalText").hide();
-            }
-          }, function(){
-          if($(this).find(".HiddenTextBody").css('display') == 'none'){
-
-            $(this).css("background-color", "black");
-            $(this).find(".OriginalText").show();
-            $(this).find(".HoverText").hide();
-          }
+    <body>
+<!--      <ul class="navbar">
+        <li> Dark Mode </li>
+        <li> My Work
+</ul> -->
+      <div class="main">
+        <section class="container">
+          <h1> Thomas Kim </h1>
+          <h1> Optimist, Developer, Designer </h1>
+        </section>
+        <section class="container">
+          <h2> I’m an incoming software engineer at <span class="bold"><span class="google-blue">G</span><span class="google-red">o</span><span class="google-yellow">o</span><span class="google-blue">g</span><span class="google-green">l</span><span class="google-red">e</span></span> who studied computer science, education theory, and human centered design at <span class="dartmouth-green">Dartmouth College</span>. </h2>
+        </section>
+        <section class="container">
+          <h2> I've had some successes in life, such as working at Microsoft, and being accepted to IDEO CoLab's fellowship program. </h2>
+        </section>
+        <section class="container">
+          <h2> But I've also had a lot of failures, such as receiving a D in my algorithms course, being rejected from a student startup group 4 times, and completing the computer science major with below median grades in 60% of my classes. </h2>
+        </section>
+        <section class="container">
+          <h2> In my free time, I like to cook, train for triathlons, or listen to music. </h2>
+        </section>
+        <section class="container">
+          <h2> Feel free to <a href="combined_resumes.pdf">check out my resume</a> or <a href="mailto:97thomas@gmail.com">contact me</a>. </h2>
+        </section>
+      </div>
+      <script>
+        onePageScroll(".main", {
+           sectionContainer: "section",     // sectionContainer accepts any kind of selector in case you don't want to use section
+           easing: "ease",                  // Easing options accepts the CSS3 easing animation such "ease", "linear", "ease-in",
+                                            // "ease-out", "ease-in-out", or even cubic bezier value such as "cubic-bezier(0.175, 0.885, 0.420, 1.310)"
+           animationTime: 1000,             // AnimationTime let you define how long each section takes to animate
+           pagination: true,                // You can either show or hide the pagination. Toggle true for show, false for hide.
+           updateURL: false,                // Toggle this true if you want the URL to be updated automatically when the user scroll to each page.
+           beforeMove: function(index) {},  // This option accepts a callback function. The function will be called before the page moves.
+           afterMove: function(index) {},   // This option accepts a callback function. The function will be called after the page moves.
+           loop: false,                     // You can have the page loop back to the top/bottom when the user navigates at up/down on the first/last page.
+           keyboard: true,                  // You can activate the keyboard controls
+           responsiveFallback: false        // You can fallback to normal page scroll by defining the width of the browser in which
+                                            // you want the responsive fallback to be triggered. For example, set this to 600 and whenever
+                                            // the browser's width is less than 600, the fallback will kick in.
         });
-    });
-    $(document).ready(function(){
-      $(".homeBoxEven").hover(function(){
-        if($(this).find(".HiddenTextBody").css('display') == 'none'){
-
-          $(this).css("background-color", "#c1c1c1");
-          $(this).css("cursor", "pointer");
-          $(this).find(".HoverText").show();
-          $(this).find(".OriginalText").hide();
-        }
-
-        }, function(){
-        if($(this).find(".HiddenTextBody").css('display') == 'none'){
-
-          $(this).css("background-color", "white");
-          $(this).find(".OriginalText").show();
-          $(this).find(".HoverText").hide();
-        }
-      });
-    });
-    // ************************************************//
-
-    // Box Click Functions
-    $(document).ready(function(){
-      $(".homeBoxEven").click(function(e){
-        if($(this).find(".HiddenTextBody").css('display') != 'none'){
-          console.log("TRIGGER");
-          $(this).css("background-color", "white");
-          $(this).find(".HoverText").hide();
-          $(this).find(".OriginalText").show();
-        }
-        $(this).find(".HiddenTextBody").slideToggle();
-      });
-    });
-    $(document).ready(function(){
-      $(".homeBoxEven").find(".HiddenTextBody").click(function(e){
-        e.stopPropagation();
-      });
-    });
-    $(document).ready(function(){
-      $(".homeBoxOdd").find(".HiddenTextBody").click(function(e){
-        e.stopPropagation();
-      });
-    });
-
-    $(document).ready(function(){
-      $(".homeBoxOdd").click(function(e){
-        if($(this).find(".HiddenTextBody").css('display') != 'none'){
-          console.log("TRIGGER");
-          $(this).css("background-color", "black");
-          $(this).find(".HoverText").hide();
-          $(this).find(".OriginalText").show();
-        }
-        $(this).find(".HiddenTextBody").slideToggle();        
-      });
-    });
-    // ************************************************//
-
-    $(document).ready(function(){
-      $("th").hover(function(){
-        $(this).css("background-color", "#c1c1c1");
-      }, function(){
-        $(this).css("background-color", "#fff");
-
-      });
-    });
-
-    $(document).ready(function(){
-      $("#LinkedIn").click(function(){
-        window.location.href = "https://www.linkedin.com/in/thomas-kim-79943b115";
-      });
-    });
-
-    $(document).ready(function(){
-      $("#email").click(function(){
-        window.location.href = "mailto:thomas.d.kim.19@dartmouth.edu";
-      });
-    });
-
-    $(document).ready(function(){
-      $("#resume").click(function(){
-        window.location.href = "https://drive.google.com/file/d/0B9V-h0QFugfBU2ttZzJBUzhlUVk/view";
-      });
-    });
-
-    $(document).ready(function(){
-      $("#github").click(function(){
-        window.location.href = "https://github.com/TdhyunK";
-      });
-    });
-    </script>
+      </script>
+    </body>
   </head>
-  <body>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="http://code.jquery.com/color/jquery.color-2.1.2.min.js"></script>
-
-    <div class="spinner"></div>
-
-    <div id="homePage" class="animate-bottom">
-      <div class="middle">
-        <div class="inner">
-        <div class="homeBoxOdd" id="ThomasKim">
-            <h1 class="OriginalText"> Thomas Kim </h1>
-            <h1 class="HoverText"> <font color="black"> About Me </font> </h1>     
-            <div class="HiddenTextBody">
-            <h3 class="HiddenText" id ="AboutMe"> <font color="black"> My name is Thomas Kim and I'm a part of the class of 2019 at Dartmouth College. I discovered my passion for technology at a young age, but found my love for coding my freshman year. When not coding, you can find me cooking or going for a run. I am currently looking for opportunities in tech or finance. </font> </h3>
-            </div> 
-
-        </div>
-        
-        <div class="homeBoxEven" id="Developer">
-          <div class="homeBoxHeader">
-            <h1 class="OriginalText"> <font color="black"> Developer </font> </h1>
-            <h1 class="HoverText"> <font color="white"> My Work </font> </h1>
-          </div>
-          <div class="HiddenTextBody">
-          <table>
-              <tr>
-              <th class="md-trigger" data-modal="tse-modal"> Tiny Search Engine </th>
-              <th class="md-trigger" data-modal="personal-site-modal"> Personal Website </th>
-              </tr>
-
-              <tr>
-              <th class="md-trigger" data-modal="SupremeBot-modal"> SupremeBot </th>
-              <th class="md-trigger" data-modal="mission-incomputable-modal"> Mission Incomputable </th>
-              </tr>
-
-              <tr>
-              <th class="md-trigger" data-modal="Autocal-modal"> AutoCal </th>
-              <th class="md-trigger" data-modal="evasyst-modal"> Evasyst Website </th>
-              </tr>
-              </table>
-        </div>
-        </div>
-
-        <div class="homeBoxOdd" id="Epicurean">
-          <h1 class="OriginalText"> <font color="white"> Reach Out </font> </h1>
-          <h1 class="HoverText"> <font color="black"> Contact Me </font> </h1>
-          <div class="HiddenTextBody">
-            <table>
-              <tr>
-                <th id="github"> <a href="https://github.com/TdhyunK">  GitHub </a> </th> 
-                <th id="LinkedIn"> <a href=https://www.linkedin.com/in/thomas-kim-79943b115> LinkedIn </a> </th> 
-              </tr>
-              <tr>
-                <th id="email"><a href="mailto:thomas.d.kim.19@dartmouth.edu"> Email </a> </th> 
-                <th id="resume"><a href=https://drive.google.com/file/d/0B9V-h0QFugfBU2ttZzJBUzhlUVk/view>  Resume </a> </th>
-              </tr>
-            </table>
-          </div>
-        </div>
-
-      </div>
-
-      </div>
-    </div>
-
-  <div class="md-modal md-effect-1" id="tse-modal">
-    <div class="md-content">
-      <h3>Tiny Search Engine</h3>
-      <div>
-        <h3> Tech Stack: C </h3>
-        <p>The Tiny Search Engine is a very basic search engine that I created for my software design and implementation class. It consists of a crawler, indexer, and querier. Due to academic policies I cannot post the project publicly on github, but <a class="paragraphLink" href="mailto:thomas.d.kim.19@dartmouth.edu"> email me </a> if you want to see the source code. </p>
-        <button class="md-close">Close</button>
-      </div>
-  </div>
-  </div>
-
-  <div class="md-modal md-effect-1" id="personal-site-modal">
-    <div class="md-content">
-      <h3>Personal Website</h3>
-      <div>
-        <h3> Tech Stack: HTML, CSS, Javasript </h3>
-        <p> My personal website (which you are viewing right now) started as a small summer vacation project that I created to showcase my work and get started with web development. I self taught myself HTML, CSS, and Javascript through this process. Thanks for visiting! </p>
-        <p> Source code: <a class="paragraphLink" href=https://github.com/TdhyunK/tdhyunk.github.io> Link </a> </p>
-        <button class="md-close">Close</button>
-      </div>
-  </div>
-  </div>
-
-  <div class="md-modal md-effect-1" id="SupremeBot-modal">
-    <div class="md-content">
-      <h3>SupremeBot</h3>
-      <div>
-        <h3> Tech Stack: Python, Selenium, Tkinter (In-Progress) </h3>
-        <p> I am a big fan of fashion (primarily streetware and sneakers), so I created a bot using Selenium for webscraping and Tkinter for the GUI to automate the process and make sure that I can purchase the items that are in high demand. </p>
-
-        <p> Source code: <a class="paragraphLink" href=https://github.com/TdhyunK/SupremeBot> Link </a> </p>
-        <button class="md-close">Close</button>
-      </div>
-  </div>
-  </div>
-
-  <div class="md-modal md-effect-1" id="mission-incomputable-modal">
-    <div class="md-content">
-      <h3>Mission Incomputable</h3>
-      <div>
-        <h3> Tech Stack: C </h3>
-        <p>Mission incomputable is a game that I had to created for my software design and implementation class. The game was created using the Pebble Watch API and has three componenets: the game server, the guide agent, and the field agent. I lead the development of the game server, which kept all of the information of the game and sent and received information when necessary. Due to academic policies I cannot post the project publicly on github, but <a class="paragraphLink" href="mailto:thomas.d.kim.19@dartmouth.edu"> email me </a> if you want to see the source code. </p>
-        <button class="md-close">Close</button>
-      </div>
-  </div>
-  </div>
-
-  <div class="md-modal md-effect-1" id="Autocal-modal">
-    <div class="md-content">
-      <h3>Autocal</h3>
-      <div>
-        <h3> Tech Stack: ReactJS, React-Router, NodeJS, Webpack, NLP (In-Progress)</h3>
-        <p> Autocal is a project that I began working on with two friends. It solves the problem of information overload by reading through emails, extracting event information (what, when, where) using NLP, and populating a personal calendar that contains all of the event information. You never have to miss an event again. As this is an ongoing project, I cannot post the code publicly, but feel free to <a class="paragraphLink" href="mailto:thomas.d.kim.19@dartmouth.edu"> email me </a> if you would like to learn more about it. </p>
-        <button class="md-close">Close</button>
-      </div>
-  </div>
-  </div>
-
-  <div class="md-modal md-effect-1" id="evasyst-modal">
-    <div class="md-content">
-      <h3>Evasyst</h3>
-      <div>
-        <h3> Tech Stack: ReactJS, Yeoman, Bootstrap, Firebase </h3>
-        <p> I am currently working at Evasyst as a software-engineering intern and I am currently redesigning their website and working on their web app. </p>
-        <button class="md-close">Close</button>
-      </div>
-  </div>
-</div>
-
-<!-- <button class="md-trigger" data-modal="modal-1">Fade in &amp; Scale</button> -->
-<!-- Container -->
-<div class="md-overlay"></div>
-<script src="ModalWindowEffects/js/classie.js"></script>
-<script src="ModalWindowEffects/js/modalEffects.js"></script>
-<script>
-      // this is important for IEs
-      var polyfilter_scriptpath = 'ModalWindowEffects/js/';
-    </script>
-    <script src="ModalWindowEffects/js/cssParser.js"></script>
-<script src="ModalWindowEffects/js/css-filters-polyfill.js"></script>
-  </body>
-</html>
-
+</html
