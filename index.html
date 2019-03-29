@@ -6,16 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Roboto Font -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
     <link href="purejs-onepage-scroll/onepage-scroll.css" rel="stylesheet">
     <script src="purejs-onepage-scroll/onepagescroll.min.js"></script>
+    <link href="css/styles.css" rel="stylesheet">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Thomas Kim</title>
     <body>
-<!--      <ul class="navbar">
-        <li> Dark Mode </li>
-        <li> My Work
-</ul> -->
       <div class="main">
         <section class="container">
           <h1> Thomas Kim </h1>
@@ -37,6 +33,11 @@
           <h2> Feel free to <a href="combined_resumes.pdf">check out my resume</a> or <a href="mailto:97thomas@gmail.com">contact me</a>. </h2>
         </section>
       </div>
+        <ul class="navbar">
+            <li id="darkMode" onclick="darkMode()"> Dark Mode </li>
+            <li id="lightMode" onclick="lightMode()"> Light Mode </li>
+            <li> My Work </li>
+        </ul>
       <script>
         onePageScroll(".main", {
            sectionContainer: "section",     // sectionContainer accepts any kind of selector in case you don't want to use section
@@ -53,6 +54,81 @@
                                             // you want the responsive fallback to be triggered. For example, set this to 600 and whenever
                                             // the browser's width is less than 600, the fallback will kick in.
         });
+
+      function darkMode() {
+        var container_array = document.getElementsByClassName("container");
+        Array.prototype.filter.call(container_array, function(container){
+          container.style.backgroundColor = "#000";
+          container.style.color = "#fff";
+        });
+
+        var navbar = document.getElementsByClassName("navbar")[0]
+        navbar.style.backgroundColor = "#000";
+        navbar.style.borderBottom = "2px solid white";
+
+        var navbarli = document.getElementsByClassName("navbar")[0].children;
+
+        Array.prototype.filter.call(navbarli, function(li) {
+          li.style.color =  "#fff";
+        });
+
+        var aList = document.getElementsByTagName("a");
+        Array.prototype.filter.call(aList, function(a) {
+          a.style.color = "#fff"; 
+        });
+        document.getElementById("lightMode").style.display = "inline";
+        document.getElementById("darkMode").style.display = "none";
+
+        paginators = document.querySelectorAll(".onepage-pagination li a");
+        Array.prototype.filter.call(paginators, function(paginator) {
+          if (paginator.className != "active") {
+            paginator.className = "dark"; 
+          }
+});
+
+        activePaginators = document.querySelectorAll(".onepage-pagination li a.active");
+        Array.prototype.filter.call(activePaginators, function(paginator) {
+          paginator.className = "dark active"; 
+});
+
+      }
+
+      function lightMode() {
+        var container_array = document.getElementsByClassName("container");
+        Array.prototype.filter.call(container_array, function(container){
+          container.style.backgroundColor = "#fff";
+          container.style.color = "#000";
+        });
+
+        var navbar = document.getElementsByClassName("navbar")[0]
+        navbar.style.backgroundColor = "#fff";
+        navbar.style.borderBottom = "2px solid black";
+
+        var navbarli = document.getElementsByClassName("navbar")[0].children;
+
+        Array.prototype.filter.call(navbarli, function(li) {
+          li.style.color =  "#000";
+        });
+
+        var aList = document.getElementsByTagName("a");
+        Array.prototype.filter.call(aList, function(a) {
+          a.style.color = "#000"; 
+        });
+        document.getElementById("lightMode").style.display = "none";
+        document.getElementById("darkMode").style.display = "inline";
+
+        paginators = document.querySelectorAll(".onepage-pagination li a");
+        Array.prototype.filter.call(paginators, function(paginator) {
+          if (paginator.className != "dark active") {
+            paginator.className = ""; 
+          }
+});
+
+        activePaginators = document.querySelectorAll(".onepage-pagination li a.dark.active");
+        Array.prototype.filter.call(activePaginators, function(paginator) {
+          paginator.className = "active"; 
+});
+      }
       </script>
     </body>
   </head>

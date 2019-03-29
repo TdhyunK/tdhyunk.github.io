@@ -18,7 +18,7 @@ body {
 }
 
 h1 {
-  font-size: 6em;
+  font-size: 5em;
   font-weight: 100;
 }
 
@@ -27,8 +27,15 @@ h2 {
   font-weight: 100;
 }
 
-ul {
+.navbar {
   list-style-type: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding-inline-start: 0;
+  border-bottom: 2px solid black;
+  margin: 0;
+  background-color: white;
 }
 
 .navbar li {
@@ -63,4 +70,18 @@ ul {
 
 a:-webkit-any-link {
   color: black;
+}
+
+.onepage-pagination li a.dark:before {
+  background: white;
+}
+
+.onepage-pagination li a.dark.active:before {
+  border: 1px solid white;
+  background: black;
+}
+
+
+#lightMode {
+  display: none;
 }
